@@ -1,0 +1,129 @@
+.strong {
+  font-weight: bold;
+}
+.blur {
+  background-color: rgba(253, 253, 253, 0.7);
+}
+
+#background {
+  background-image: url('../images/background_music.png');
+  height: 100vh;
+  width: 100vw;
+  background-position: top;
+}
+
+#reg_background {
+  background-image: url('../images/audio.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-position: top;
+}
+
+#category_background {
+  background-image: url('../images/register.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-position: top;
+}
+
+#about_background {
+  background-image: url('../images/who.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-position: top;
+}
+
+#accessories_background {
+  background-image: url('../images/desk.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-position: top;
+}
+.accessories_overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+#contact_us {
+  background-image: url('../images/contact-us.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+}
+.reg_overlay {
+  background-color: rgba(209, 8, 8, 0.308);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+img.responsive {
+  max-width: 5rem;
+}
+
+#category .card {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  margin: 1rem 1rem;
+  height: 100%;
+}
+
+.image_responsive {
+  max-width: 5rem;
+  /* max-height: 5rem; */
+}
+
+.list-group-item .left,
+.list-group-item .right {
+  padding: 1rem 1rem;
+}
+.list-group-item .right {
+  max-width: 20rem;
+}
+
+.right .link {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.right .link:hover {
+  color: rgb(22, 34, 209);
+}
+
+.text-sm {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.working a {
+  text-decoration: none;
+  color: black;
+}
+
+.box.active:hover {
+  background: rgba(200, 200, 200, 0.1);
+  cursor: pointer;
+  color: aquamarine;
+}
+
+/* homepage styles */
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

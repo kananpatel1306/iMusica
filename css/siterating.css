@@ -1,0 +1,30 @@
+svg {
+  width: 2em;
+  height: 2em;
+  fill: white;
+  pointer-events: none;
+}
+
+.stars {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: flex-end;
+}
+
+.star.is-selected svg,
+.star.is-selected ~ .star svg {
+  fill: #996300;
+}
+
+.star:hover svg,
+.star:hover ~ .star svg {
+  fill: orange;
+}
+
+#rated {
+  margin-top: 1em;
+}
+
+[dir='rtl'] {
+  direction: rtl;
+}
