@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>iMusica Online Music Store</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="reg_background">
+      <div class="reg_overlay">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">iMusica</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products.html">Products</a>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Login</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="registration.html">Register</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Connect With Us
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="aboutus.html">About Us</a>
+                    <a class="dropdown-item" href="contactus.html"
+                      >Contact Us</a
+                    >
+                    <a class="dropdown-item" href="siterating.html"
+                      >Rate Our Site</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <form>
+          <div class="container">
+            <div class="row my-4">
+              <div class="col-md-6 mx-auto">
+                <div class="form-group">
+                  <label for="tbTitle strong">Title </label>
+                  <select name="title" id="tbTitle" class="form-control">
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="miss">Miss</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="tbFirstName strong">First Name </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="firstname"
+                    id="tbFirstName"
+                    placeholder="Enter First Name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="tbLastName strong">Last Name </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="lastname"
+                    id="tbLastName"
+                    placeholder="Enter Last Name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="tbGender strong"
+                    >Gender
+                    <input
+                      type="radio"
+                      name="gender"
+                      class="ml-4"
+                      id="tbMale"
+                      checked
+                    />
+                    <label for="tbMale">Male</label>
+
+                    <input
+                      type="radio"
+                      class="ml-2"
+                      name="gender"
+                      id="tbFemale"
+                    />
+                    <label for="tbFemale">Female</label>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label for="tbDOB">DOB</label>
+                  <input
+                    type="date"
+                    name="dob"
+                    id="tbDOB"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="tbmailing">Mailing address</label>
+                  <input
+                    type="text"
+                    name="mailing"
+                    id="tbmailing"
+                    class="form-control"
+                    placeholder="Enter Mailing Address"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="tbsuburb">Suburb</label>
+                  <textarea
+                    name="suburb"
+                    id="tbsuburb"
+                    class="form-control"
+                    rows="3"
+                    placeholder="Enter Suburb"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="tbcity">City</label>
+                  <input
+                    type="text"
+                    name="city"
+                    id="tbcity"
+                    class="form-control"
+                    placeholder="Enter City"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="tbpostal">Postal Code</label>
+                  <input
+                    type="number"
+                    name="postal"
+                    id="tbpostal"
+                    class="form-control"
+                    placeholder="Enter Postal Code"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="tbcity">Contact No.</label>
+                  <input
+                    type="number"
+                    name="contact"
+                    id="tbcontact"
+                    class="form-control"
+                    placeholder="Enter Contact Number"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="tbmailing">Email address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="tbemail"
+                    class="form-control"
+                    placeholder="someone@domain.com"
+                    required
+                    pattern='
+                      /^(([^<>()\[\]\\.,;:\s@"
+                      ]+(\.[^<
+                    />()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="tbpassword">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="tbpassword"
+                    class="form-control"
+                    placeholder="Enter Password"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="tbus strong">How did you hear about us? </label>
+                  <select name="title" id="tbus" class="form-control">
+                    <option value="internet" selected>Internet</option>
+                    <option value="newspaper">Newspaper</option>
+                    <option value="ads">Advertisement</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="tbGender strong"
+                    >Are you interested in receiving specials from us in future?
+                    <input
+                      type="radio"
+                      name="subscribe"
+                      class="ml-4"
+                      id="optionYes"
+                      checked
+                    />
+                    <label for="optionYes">Yes</label>
+                    <input
+                      type="radio"
+                      class="ml-2"
+                      name="subscribe"
+                      id="optionNo"
+                    />
+                    <label for="optionNo">No</label>
+                  </label>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-danger btn-block"
+                  id="submit"
+                >
+                  Submit
+                </button>
+                <br />
+                <div class="mt-2">
+                  Already have account?
+                  <a href="index.html" class="text-danger"> Login Now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="bootstrap/jquery.js"></script>
+    <script src="bootstrap/popper.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/validation.js"></script>
+  </body>
+</html>
